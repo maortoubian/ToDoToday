@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#ffffff"
+    tools:context="il.ac.shenkar.todotoday.CreateTaskActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/createTask"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:isScrollContainer="false"
+        android:background="@color/white"  >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="415dp"
+            android:background="#fdfdfd"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/createImage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/act1" />
+
+                <EditText
+                    android:id="@+id/createTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Title"
+                    android:lines="2"     
+                    android:maxLength="35" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/createDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Description"
+                android:inputType="textMultiLine"/>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="50dp"
+                android:text="notification by:"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Button
+                android:id="@+id/createAlarm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/blue"
+                android:shadowColor="@color/blue"
+                android:text="Alarm"
+                android:textColor="@color/white"
+                android:textColorLink="@color/blue"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/geobtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/blue"
+                android:shadowColor="@color/blue"
+                android:text="Location"
+                android:textColor="@color/white"
+                android:textColorLink="@color/blue"
+                android:textSize="20sp" 
+                android:layout_marginBottom="5dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/createTask"
+        style="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue"
+        android:shadowColor="@color/blue"
+        android:text="Add Task"
+        android:textColor="@color/white"
+        android:textColorLink="@color/blue"
+        android:textSize="26sp" />
+
+</RelativeLayout>
