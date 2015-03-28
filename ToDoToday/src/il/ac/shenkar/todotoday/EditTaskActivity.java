@@ -6,7 +6,6 @@ import il.ac.shenkar.todotoday.alarm.SetAlarm;
 import il.ac.shenkar.todotoday.location.GeoLocation;
 import il.ac.shenkar.todotoday.location.GeofencingReceiverIntentService;
 import il.ac.shenkar.todotoday.location.SimpleGeofence;
-import il.ac.shenkar.todotoday.location.SimpleGeofenceStore;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -76,7 +75,6 @@ OnConnectionFailedListener, ResultCallback<Status> {
 	private DBHelper db;
 	
 	List<Geofence> mGeofenceList;
-	private SimpleGeofenceStore mGeofenceStorage;
 	private PendingIntent mGeofenceRequestIntent;
 	private GoogleApiClient mApiClient;
 	
@@ -91,7 +89,6 @@ OnConnectionFailedListener, ResultCallback<Status> {
         .addOnConnectionFailedListener(this)
         .build();
 		
-		mGeofenceStorage = new SimpleGeofenceStore(this);
 		mGeofenceList = new ArrayList<Geofence>();
 		
 		db = new DBHelper(this);
@@ -173,7 +170,6 @@ OnConnectionFailedListener, ResultCallback<Status> {
 								 		Geofence.GEOFENCE_TRANSITION_ENTER|
 								 		Geofence.GEOFENCE_TRANSITION_EXIT);
 						 
-						 mGeofenceStorage.setGeofence(String.valueOf(taskId), geofence);
 						 mGeofenceList.add(geofence.toGeofence());
 						 mApiClient.connect();
 					}

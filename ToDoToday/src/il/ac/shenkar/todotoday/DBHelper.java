@@ -167,8 +167,7 @@ public class DBHelper extends SQLiteOpenHelper {
     			String[] repeatingDays = cursor.getString(cursor.getColumnIndex(REPEAT_DAYS)).split(",");
     			for (int i = 0; i < repeatingDays.length; ++i) {
     				task.setRepeatingDay(i, repeatingDays[i].equals("false") ? false : true);
-    			}
-    			
+    			}    			
     			taskList.add(task);
     		} while(cursor.moveToNext());
     	}

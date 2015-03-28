@@ -20,7 +20,6 @@ import android.widget.GridView;
  * icons when we creates task or when he edit
  */
 
-
 public class ChooseImageActivity extends Activity {
 	public final static String IMAGE_CHOSEN_OK = "chosen_ok";
 	

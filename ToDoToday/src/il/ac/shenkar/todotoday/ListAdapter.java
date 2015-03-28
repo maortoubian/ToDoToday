@@ -21,7 +21,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 /*
- * this adapter holds the list of all the task in the main activity
+ * this adapter holds the list of all the tasks in the main activity
  */
 public class ListAdapter extends BaseAdapter implements OnClickListener {
 

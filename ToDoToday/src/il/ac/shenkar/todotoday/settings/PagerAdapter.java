@@ -3,7 +3,10 @@ package il.ac.shenkar.todotoday.settings;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-
+/*
+ * this adapter holds the three HowTo fragments
+ * and initialize the swipe gestures in needed 
+ */
 public class PagerAdapter extends FragmentPagerAdapter {
 
 	public PagerAdapter(FragmentManager fm) {

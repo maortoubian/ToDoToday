@@ -8,7 +8,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+/*
+ * this fragment holds the 1st HowTo screen
+ */
 public class FragmentOne extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater,

@@ -21,7 +21,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.provider.Settings;
 /*
- * this class hold the task alarm screen when alarm is on
+ * this class hold the task alarm screen when alarm is activated
  */
 public class AlarmScreen extends Activity {
 	

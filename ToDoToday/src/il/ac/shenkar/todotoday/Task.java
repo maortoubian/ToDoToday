@@ -15,8 +15,8 @@ public class Task {
 	public static final int FRIDAY = 5;
 	public static final int SATURDAY = 6;
 	
-	public int				id; 		//public long id = -1;
-	public String			title; 		//public String name;
+	public int				id; 		
+	public String			title; 		
 	public String			description;
 	public int				imageId;
 	public boolean			done;

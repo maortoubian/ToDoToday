@@ -13,6 +13,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+/*
+ * this class holds the three  HowTo fragments
+ */
 public class HowToActivity extends FragmentActivity {
 	ViewPager viewpager;
 	Button gotIt;
