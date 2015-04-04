@@ -291,6 +291,7 @@ OnConnectionFailedListener, ResultCallback<Status> {
 		LocationServices.GeofencingApi.addGeofences(mApiClient, mGeofenceList,mGeofenceRequestIntent).setResultCallback(this);
 	}
 
+	
 	@Override
 	public void onStop() {
 		if(mApiClient.isConnected()){

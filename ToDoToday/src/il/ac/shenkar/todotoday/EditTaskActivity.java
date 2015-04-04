@@ -378,6 +378,7 @@ OnConnectionFailedListener, ResultCallback<Status> {
 		}
 	}
 	
+	
 	@Override
 	public void onStop() {
 		if(mApiClient.isConnected()){
