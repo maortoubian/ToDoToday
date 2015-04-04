@@ -290,6 +290,12 @@ OnConnectionFailedListener, ResultCallback<Status> {
 		mGeofenceRequestIntent = getGeofenceTransitionPendingIntent();
 		LocationServices.GeofencingApi.addGeofences(mApiClient, mGeofenceList,mGeofenceRequestIntent).setResultCallback(this);
 	}
+	
+	@Override
+	public void onStop() {
+	    mApiClient.disconnect();
+	    super.onStop();
+	}
 
 	public void onConnectionSuspended(int cause) {
 		// TODO Auto-generated method stub	

@@ -378,6 +378,12 @@ OnConnectionFailedListener, ResultCallback<Status> {
 		}
 	}
 	
+	@Override
+	public void onStop() {
+	    mApiClient.disconnect();
+	    super.onStop();
+	}
+	
 	public void onResult(Status arg0) {
 		// TODO Auto-generated method stub	
 	}
