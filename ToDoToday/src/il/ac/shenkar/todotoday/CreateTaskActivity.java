@@ -293,7 +293,9 @@ OnConnectionFailedListener, ResultCallback<Status> {
 
 	@Override
 	public void onStop() {
-	    mApiClient.disconnect();
+		if(mApiClient.isConnected()){
+			mApiClient.disconnect();
+		}
 	    super.onStop();
 	}
 
